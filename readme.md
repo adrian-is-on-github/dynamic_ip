@@ -14,7 +14,7 @@
 - Checks to see if it matches the last IP in the logs
 - If it's different, it'll send an API request to AWS Route53
   `aws route53 change-resource-record-sets --hosted-zone-id $HOSTED_ZONE --change-batch file://~/route53_update.json`
-- It logs everything substantial into `log_ip_update.txt`
+- It logs everything substantial into `ip_update.log`
 
 ### What Does it Need? ###
 - AWS CLI setup on the machine
